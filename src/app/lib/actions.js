@@ -158,8 +158,7 @@ export const authenticate = async (prevState, formData) => {
   const { username, password } = Object.fromEntries(formData);
 
   try {
-    const user = await User.findOne({ username:username });
-    console.log(user)
+   
 
     console.log(password)
     await signIn("credentials", { username, password });
