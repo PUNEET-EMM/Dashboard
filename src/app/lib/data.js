@@ -61,6 +61,8 @@ export const fetchProduct = async (id) => {
   }
 };
 
+
+
 // DUMMY DATA
 
 export const cards = [
