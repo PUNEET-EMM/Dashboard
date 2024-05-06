@@ -20,7 +20,7 @@ export const fetchUsers = async (q, page) => {
 };
 
 export const fetchUser = async (id) => {
-  console.log(id);
+ 
   try {
     connectToDB();
     const user = await User.findById(id);
@@ -32,7 +32,7 @@ export const fetchUser = async (id) => {
 };
 
 export const fetchProducts = async (q, page) => {
-  console.log(q);
+  
   const regex = new RegExp(q, "i");
 
   const ITEM_PER_PAGE = 2;
